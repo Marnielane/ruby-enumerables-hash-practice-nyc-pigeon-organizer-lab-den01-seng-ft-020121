@@ -13,9 +13,9 @@ def nyc_pigeon_organizer(data)
         new_array[name][key].push(inner_key.to_s)
 
       end
-    end
+    binding.pry
+     new_array
   end
-  binding.pry
-  new_array
+ 
 end
 
