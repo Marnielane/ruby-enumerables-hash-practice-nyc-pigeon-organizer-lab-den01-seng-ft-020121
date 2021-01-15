@@ -1,20 +1,20 @@
 require 'pry'
 
 def nyc_pigeon_organizer(data)
-  data.each_with_object({}) do |(key,value), new_array|
-    value.each do |inner_key, name|
-      name.each do |name|
-        if !new_array[name] do
-          new_array[name] = {}
+  data.each_with_object({}) do |(key,value), final_hash|
+    value.each do |colors, pigeons|
+      pigeons.each do |name|
+        if !final_hash[name] do
+          final_hash[name] = {}
         end
-        if !new_array[name][key] do
-          !new_array[name][key] = []
+        if !final_hash[name][key] do
+          !final_hash[name][key] = []
         end
-        new_array[name][key].push(inner_key.to_s)
+        final_hash[name][key].push(colors.to_s)
 
       end
-    binding.pry
-     new_array
+     binding.pry
+     final_hash
   end
  
 end
