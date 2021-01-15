@@ -3,7 +3,11 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   data.each_with_object({}) do |(key,value), new_array|
     value.each do |inner_key, name|
-      names.each do |name|
+      name.each do |name|
+      
+        if !new_array[name] do
+          new_array[name] = {}
+        end
    binding.pry 
    
       end
