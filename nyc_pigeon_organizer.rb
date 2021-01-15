@@ -18,4 +18,4 @@ def nyc_pigeon_organizer(data)
   binding.pry
   new_array
 end
-  
+end 
