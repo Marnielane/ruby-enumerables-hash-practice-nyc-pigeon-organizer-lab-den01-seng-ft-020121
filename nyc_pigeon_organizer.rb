@@ -1,7 +1,7 @@
 require 'pry'
 
 def nyc_pigeon_organizer(data)
-  data.each_with_object({}) do |(key,value), final_hash|
+  final_hash = data.each_with_object({}) do |(key,value), final_hash|
     value.each do |colors, pigeons|
       pigeons.each do |name|
         if !final_hash[name]
