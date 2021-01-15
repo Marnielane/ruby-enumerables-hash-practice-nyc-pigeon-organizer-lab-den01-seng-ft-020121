@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   final_hash = data.each_with_object({}) do |(key,value), final_hash|
     
       value.each do |colors, pigeons|
-          pigeons.each do |name
+          pigeons.each do |name|
           binding.pry
               if !final_hash[name]
               final_hash[name] = {}
