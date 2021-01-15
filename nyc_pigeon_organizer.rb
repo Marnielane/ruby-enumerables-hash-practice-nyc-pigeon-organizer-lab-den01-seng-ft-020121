@@ -5,7 +5,6 @@ def nyc_pigeon_organizer(data)
     
       value.each do |colors, pigeons|
           pigeons.each do |name|
-          binding.pry
               if !final_hash[name]
               final_hash[name] = {}
               end
@@ -15,6 +14,7 @@ def nyc_pigeon_organizer(data)
           final_hash[name][key].push(colors.to_s)
           end 
      end
+     binding.pry
      final_hash
   end
  
